@@ -1,6 +1,6 @@
-<h1>タスク一覧</h1>
+<% if logged_in? %>
 
-<% if @tasks.any? %>
+<h1>タスク一覧</h1>
 
   <table class="table table-striped">
     <thead>
@@ -38,3 +38,4 @@
 <% end %>
 
 <%= link_to '新規タスクの追加', new_task_path, class: "btn btn-primary" %>
+
